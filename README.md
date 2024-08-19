@@ -322,3 +322,122 @@ If you see `node_modules` or `.env` files being tracked, you should:
       <Route path='*' element={<Error />} />
    </Routes>
 ```
+
+
+# Team Member Assignments:
+
+### To-Do List
+
+#### Files
+
+1. App.css
+   - Description: Global styles for the main application.
+   - Assignee: 
+
+2. App.jsx
+   - Description: Main component that sets up routing and overall layout of the application.
+   - Assignee: 
+
+3. index.css
+   - Description: Global styles applied at the entry point of the application.
+   - Assignee: 
+
+4. main.jsx
+   - Description: Entry point for the React application; renders the main `App` component.
+   - Assignee: 
+
+5. .gitignore
+   - Description: Specifies files and directories to be ignored by Git.
+   - Assignee: 
+
+6. README.md
+   - Description: Documentation file providing an overview of the project, setup instructions, and usage guidelines.
+   - Assignee: 
+
+7. index.html
+   - Description: Main HTML file serving as the entry point for the application.
+   - Assignee: 
+
+8. package-lock.json
+   - Description: Automatically generated file that locks the dependencies to specific versions.
+   - Assignee: 
+
+9. package.json
+   - Description: Manages project dependencies, scripts, and metadata.
+   - Assignee: 
+
+10. vite.config.js
+    - Description: Configuration file for Vite, a build tool and development server.
+    - Assignee: 
+
+
+#### Components
+
+1. NavBar.jsx
+   - Description: Navigation bar present on all pages.
+   - CSS: `NavBar.css` styles the navigation bar, including layout, spacing, and responsiveness.
+   - Assignee: 
+
+2. Begonia.jsx
+   - Description: Represents a single Rex Begonia, likely used in lists.
+   - CSS: `Begonia.css` styles individual begonia entries, including layout, typography, and visual presentation.
+   - Assignee: 
+
+3. BegoniaDetails.jsx
+   - Description: Detailed view of a single Begonia.
+   - CSS: `BegoniaDetails.css` styles the detailed view, ensuring readability and visual separation of different sections.
+   - Assignee: 
+
+4. BegoniaEditForm.jsx
+   - Description: Form to edit an existing Begonia entry.
+   - CSS: `BegoniaEditForm.css` styles the form elements, ensuring proper spacing, alignment, and responsiveness.
+   - Assignee: 
+
+5. BegoniaNewForm.jsx
+   - Description: Form to create a new Begonia entry.
+   - CSS: `BegoniaNewForm.css` styles the new entry form, including form fields, labels, and submit buttons.
+   - Assignee: 
+
+6. Begonias.jsx
+   - Description: List of all Rex Begonias.
+   - CSS: `Begonias.css` styles the list of begonias, including item layout, spacing, and visual hierarchy.
+   - Assignee: 
+
+
+#### Pages
+
+1. About.jsx
+   - Description: Page for Web Developer's biography.
+   - CSS: `About.css` styles the biography page, including layout, typography, and any images or sections.
+   - Assignee: 
+
+2. Add.jsx
+   - Description: Page for creating a new Begonia entry, contains `BegoniaNewForm`.
+   - CSS: `Home.css` provides layout and styling for the new begonia entry page.
+   - Assignee: 
+
+3. Edit.jsx
+   - Description: Page for editing a Begonia entry, contains `BegoniaEditForm`.
+   - CSS: `Edit.css` styles the editing page, including the form and any surrounding content.
+   - Assignee: 
+
+4. Error.jsx
+   - Description: Page displayed when a route is not found or an error occurs.
+   - CSS: `Error.css` styles the error page, ensuring it is visually distinct and informative.
+   - Assignee: 
+
+5. Home.jsx
+   - Description: Home page/ landing page of the application.
+   - CSS: `Home.css` provides styling for the main landing page, including layout, typography, and any featured content.
+   - Assignee: 
+
+6. Index.jsx
+   - Description: Page displaying a list of all Begonias, contains `Begonias`.
+   - CSS: `Begonias.css` styles the index page, ensuring a clean and readable list of begonias.
+   - Assignee: 
+
+7. Show.jsx
+   - Description: Page displaying details of a single Begonia, contains `BegoniaDetails`.
+   - CSS: `BegoniaDetails.css` styles the details page for a single begonia, focusing on detailed information layout and readability.
+   - Assignee: 
+
