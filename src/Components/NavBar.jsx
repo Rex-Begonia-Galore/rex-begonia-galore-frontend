@@ -20,7 +20,7 @@ export default function NavBar() {
                 <button className="menu-toggle" onClick={toggleMenu}>
                     ☰
                 </button>
-        </div>
+            </div>
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
                 <Link to="/" className="nav-item">

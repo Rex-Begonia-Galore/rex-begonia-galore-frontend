@@ -1,0 +1,136 @@
+/* general navbar styles */
+.nav {
+    display: flex;
+    flex-direction: column; /* stack items vertically by default */
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F8F8F8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px; /* fixed width for sidebar */
+    height: 100%; /* full height */
+    padding: 0;
+    z-index: 1000;
+    transition: width 0.3s ease; /* smooth transition for width */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    padding: 10px; /* space between top and logo */
+}
+
+.navbar-logo {
+    align-items: center;
+    /* height: 75px; */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    /* padding: 20px 10px;
+    margin-right: auto; */
+}
+
+.menu-toggle {
+    margin-left: auto; /* align the hamburger icon next to the logo */
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* space between logo and links */
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 11px;
+    /* font-weight: normal; */
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-icon {
+    width: 25px; /* adjust icon size */
+    height: 25px;
+}
+
+.nav-item p {
+    margin: 5px 0 0 0; /* space between icon and text */
+}
+
+.nav-item:hover {
+    color: #3FD549; /* hover color */
+    transform: scale(1.1);
+}
+
+/* responsive adjustments */
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-direction: row; /* switch to a horizontal navbar */
+        width: 100%; /* full width */
+        height: auto;
+        padding: 10px;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+    }
+    
+    .logo {
+        padding: 10px; /* adjust padding for smaller screens */
+    }
+
+    .navbar-logo {
+        height: 30px;
+    }
+
+    .nav-links {
+        display: none; /* hide links initially */
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        align-items: center;
+        justify-content: space-between;
+       
+        background-color: #F8F8F8; /* background color to match navbar */
+        z-index: 999; /* ensure it appears above other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* show links when menu is active */
+    }
+
+    .nav-icon {
+        width: 25px; /* adjust icon size */
+        height: 25px;
+    }
+
+    .menu-toggle {
+        display: block; /* show hamburger icon in responsive mode */
+        position: absolute; /* position it absolutely within the .nav */
+        right: 10px; /* adjust to place at the very right */
+        top: 10px; /* align it vertically */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-item p {
+        font-size: 0.5rem; /* adjust text size for smaller screens */
+    }
+}
