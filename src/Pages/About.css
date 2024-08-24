@@ -1,0 +1,120 @@
+.team-list-container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative; 
+    text-decoration: none;
+    margin-right: 50px; 
+}
+
+.h2 {
+    color: gray;
+    transition: transform 2.0s ease;
+    transform: scale(1.4) translateZ(100px);
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+}
+
+.meet-team {
+    color: black;
+    transition: transform 2.0s ease;
+    transform: scale(1.4) translateZ(100px);
+    margin: 10px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 50px;
+    text-decoration: none;
+    display: flex;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.team-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.team-list li {
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.team-list li > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.9s ease;
+}
+
+.team-list li img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-list li p {
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+.bio {
+    display: none;
+    font-size: 14px;
+}
+
+.expanded {
+    transform: scale(1.4) translateZ(100px);
+}
+
+.expanded img {
+    transform: scale(1.4);
+    padding-bottom: 30px;
+}
+
+.expanded .bio {
+    display: block;
+}
+
+/* Apply hover effect to headings and paragraph */
+h2:hover,
+h4:hover,
+.team-list li p:hover {
+    font-size: 2em;
+    transition: font-size 0.9s ease;
+}
+
+.team-list li p.active {
+    background-color: #88a783;
+}
+
+.member {
+    transition: transform 0.9s ease;
+}
+
+@media (max-width: 700px) {
+    .h2 {
+        padding: 15px;
+        margin: 5px;
+    }
+}
