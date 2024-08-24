@@ -21,6 +21,8 @@ export default function NavBar() {
                     ☰
                 </button>
             </div>
+          
+
 
             <div className={`nav-links ${menuOpen ? 'active' : ''}`}>
                 <Link to="/" className="nav-item">
