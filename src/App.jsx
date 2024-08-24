@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import About from './Pages/About'
+import Add from './Pages/Add'
+import Edit from './Pages/Edit'
+import Error from './Pages/Error'
+import Home from './Pages/Home'
+import Index from './Pages/Index'
+import Show from './Pages/Show'
 
+import NavBar from './Components/NavBar'
+
+function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="App">
+      <Router>
+        <NavBar />
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/allbegonias' element={<Index />} />
+            <Route path='/begonias/add' element={<Add />} />
+            <Route path='/begonias/:id' element={<Show />} />
+            <Route path='/begonias/:id/edit' element={<Edit />} />
+            <Route path='*' element={<Error />} />
+          </Routes>
+        </main>
+      </Router>
+      {/* <h1>Welcome to Rex Begonia Galore!</h1> */}
+    </div>
   )
 }
 
-export default App
+export default App;
+
+/*
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/index' element={<Index />} />
+            <Route path='/add' element={<Add />} />
+            <Route path='/show/:id' element={<Show />} />
+            <Route path='/edit/:id' element={<Edit />} />
+            <Route path='*' element={<Error />} />
+
+*/
