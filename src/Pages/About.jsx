@@ -4,7 +4,7 @@ export default function About() {
             <h1>This is the About page!</h1>
         </div>
     )
-}// Mike - Update your AboutUs.jsx file with the following JSX code
+}
 
 import { useState } from 'react';
 import "./AboutUs.css";
