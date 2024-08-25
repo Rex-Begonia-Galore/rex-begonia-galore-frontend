@@ -1,0 +1,53 @@
+/* begoniaaddform.css */ /* container for the form */
+.BegoniaAddForm {
+  padding: 20px 10px; /* add padding inside the container */
+  margin-top: 20px; /* add margin at the top */
+  width: max-content; /* set width to fit content */
+  border: 5px solid white; /* add a white border */
+  background-color: #041b15; /* set background color */
+  color: white; /* set text color to white */
+  border-radius: 25px; /* round the corners */
+  margin-left: 650px; /* center the form */
+} /* styling for form elements */
+.BegoniaAddForm__form {
+  width: 330px; /* set form width */
+  display: flex; /* use flexbox layout */
+  flex-direction: column; /* stack elements vertically */
+  align-items: center; /* center align items */
+} /* styling for input fields */
+.BegoniaAddForm input[type="text"],
+.BegoniaAddForm input[type="number"],
+.BegoniaAddForm textarea {
+  padding: 2px; /* add padding inside input fields */
+  font-size: 25px; /* set font size */
+  width: 270px; /* set width for input fields */
+  margin-bottom: 12px; /* add margin at the bottom */
+  border: 1px solid #ddd; /* add border */
+  border-radius: 4px; /* round the corners */
+  box-sizing: border-box; /* include padding and border in element's total width and height */
+} /* styling for labels */
+.BegoniaAddForm label {
+  font-size: 1.5em; /* set font size for labels */
+  margin-bottom: 8px; /* add margin at the bottom */
+  color: #fff; /* set text color to white */
+} /* styling for label hover effect */
+.BegoniaAddForm label:hover {
+  color: #4ce0d2; /* change color on hover */
+} /* styling for checkbox */
+.BegoniaAddForm input[type="checkbox"] {
+  margin-right: 8px; /* add margin to the right */
+} /* styling for submit button */
+.BegoniaAddForm button {
+  margin: 0; /* remove margin */
+  padding: 5px 10px; /* add padding */
+  font-size: 1.3em; /* set font size */
+  background: transparent; /* set background to transparent */
+  color: #edf2f4; /* set text color */
+  border: none; /* remove border */
+  cursor: pointer; /* change cursor to pointer */
+  border-radius: 25px; /* round the corners */
+} /* styling for button hover effect */
+.BegoniaAddForm button:hover {
+  background-color: #4ce0d2; /* change background color on hover */
+  color: #041b15; /* change text color on hover */
+}

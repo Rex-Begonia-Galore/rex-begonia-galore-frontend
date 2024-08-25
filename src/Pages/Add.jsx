@@ -1,7 +1,9 @@
+import BegoniaAddForm from "../Components/BegoniaAddForm";
+
 export default function Add() {
-    return (
-        <div className="Add">
-            <h1>This is the Add Begonia Page!</h1>
-        </div>
-    )
+  return (
+    <div className="Add">
+      <BegoniaAddForm />
+    </div>
+  );
 }
